@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const USUARIO_BASE_API = "http://localhost:8080/usuario";
 
@@ -59,8 +59,7 @@ export default function AddUsuario() {
             </div>
 
             <button type="submit" className='btn btn-primary mx-1'>Enviar</button>
-            <button type="submit" className='btn btn-outline-danger mx-2'>Cancelar</button>
-
+            <Link to="/" className='btn btn-outline-danger mx-2'>Cancelar</Link>
 
           </form>
 
