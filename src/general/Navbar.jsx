@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -8,7 +9,7 @@ export default function Navbar() {
           <a className='navbar-brand' href="#">
             React Frontend
           </a>
-          <button className='btn btn-outline-light'>Nuevo Usuario</button>
+          <Link to="/nuevo/usuario" className='btn btn-outline-light'>Nuevo Usuario</Link>
           <button type='button'
             className='toggler bg-dark'
             data-bs-toggle='collapse'
